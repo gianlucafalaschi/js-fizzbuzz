@@ -15,10 +15,35 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
 Mi raccomando facciamo il bonus solo dopo aver completato la consegna base e averne testato il corretto funzionamento. */
 
 //PRENDERE NUMERI DA 1 a 100
+for (let i = 1; i <= 100; i++) {
+    
 
     // CONTROLLARE CHE I NUMERI SIANO MULTIPLI DI 3 E 5
+    
+    let multipleOfFizzBuzz;
+
+    if(i % 3 === 0 && i % 5 === 0) {
+        multipleOfFizzBuzz = 'FizzBuzz';
+        
+    }
     // CONTROLLARE CHE I NUMERI SIANO MULTIPLI DI 3
+    else if (i % 3 === 0) {
+        multipleOfFizzBuzz = 'Fizz';      
+    }
     // CONTROLLARE CHE I NUMERI SIANO MULTIPLI DI 5
+    else if (i % 5 === 0) {
+        multipleOfFizzBuzz = 'Buzz';
+    }
+    else {
+        multipleOfFizzBuzz = i;
+    }
+    
+    console.log(multipleOfFizzBuzz);
+    
+
+
+};
+    
 
 // STAMPA IN CONSOLE FIZZ SE MULTIPLO 3
 // STAMPA IN CONSOLE BUZZ SE MULTIPLO 5
