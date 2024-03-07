@@ -27,29 +27,33 @@ for (let i = 1; i <= 100; i++) {
     
     let multipleOfFizzBuzz;
 
+    let newBoxclass = 'only-number';
+
     if(i % 3 === 0 && i % 5 === 0) {
         multipleOfFizzBuzz = 'FizzBuzz';
-        
+        newBoxclass = 'multiple-3-5';
     }
     // CONTROLLARE CHE I NUMERI SIANO MULTIPLI DI 3
     else if (i % 3 === 0) {
-        multipleOfFizzBuzz = 'Fizz';      
+        multipleOfFizzBuzz = 'Fizz'; 
+        newBoxclass = 'multiple-3';     
     }
     // CONTROLLARE CHE I NUMERI SIANO MULTIPLI DI 5
     else if (i % 5 === 0) {
         multipleOfFizzBuzz = 'Buzz';
+        newBoxclass = 'multiple-5';
     }
     else {
         multipleOfFizzBuzz = i;
+        newBoxclass = 'only-number';
     }
     
     console.log(multipleOfFizzBuzz);
     
 //Crea un container nel DOM , aggiungendo un elemento html con 
 //il numero o la stringa corretta da mostrare.
-const newBox = `<div>${multipleOfFizzBuzz}</div>`;
-    console.log(newBox);
-
+const newBox = `<div class='${newBoxclass}'>${multipleOfFizzBuzz}</div>`;
+    
 wrapper.innerHTML += newBox;
 
 };
@@ -65,3 +69,5 @@ wrapper.innerHTML += newBox;
 Applica stili differenti agli elementi aggiunti al DOM nel *BONUS 1*, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
 Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna.
 Mi raccomando facciamo il bonus solo dopo aver completato la consegna base e averne testato il corretto funzionamento. */ 
+
+//creazione di div con classi e appendere il div all'html

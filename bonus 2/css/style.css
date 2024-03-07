@@ -6,3 +6,47 @@
     box-sizing: border-box;
 }
 
+/* GENERAL */
+
+#wrapper {
+    width: 960px; ;
+    margin: 0 auto;
+    background-color: beige;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* .box {
+    background-color: bisque;
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    
+} */
+
+.multiple-3-5 {
+    background-color: blueviolet;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+.multiple-3 {
+    background-color: chartreuse;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+.multiple-5 {
+    background-color: brown;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+.only-number {
+    background-color: cadetblue;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
